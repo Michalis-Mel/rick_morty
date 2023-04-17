@@ -14,8 +14,6 @@ const CharacterDetail = () => {
       navigate("/");
     }
   };
-
-  console.log(details);
   return (
     <div>
       {!isLoading && (

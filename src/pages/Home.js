@@ -1,7 +1,5 @@
 import { useEffect } from "react";
 
-//Import Styles
-import "../styles/app.scss";
 import { useLocation } from "react-router-dom";
 
 //REDUX
