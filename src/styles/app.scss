@@ -256,7 +256,7 @@ h2 {
 
     .detail {
       width: fit-content;
-      min-width: 600px;
+      min-width: 500px;
       border-radius: 20px;
       padding: 50px 30px;
       background: white;
@@ -273,6 +273,16 @@ h2 {
         align-items: center;
         justify-content: center;
         text-align: center;
+
+        &::-webkit-scrollbar {
+          width: 5px;
+        }
+        &::-webkit-scrollbar-thumb {
+          background-color: #5f5f5f;
+        }
+        &::-webkit-scrollbar-track {
+          background: #fff;
+        }
         p {
           font-size: 18px;
           line-height: 26px;
@@ -285,6 +295,7 @@ h2 {
 
         .img_con {
           width: 100%;
+          max-width: 350px;
           overflow: hidden;
           margin-top: 20px;
 
@@ -365,6 +376,13 @@ h2 {
   .main_page .section .characters .character {
     width: 50%;
     flex: 0 0 50%;
+  }
+  .main_page .card_shadow .detail {
+    width: 80%;
+    padding: 20px;
+    min-width: unset;
+    height: 80vh;
+    margin: auto;
   }
 }
 
